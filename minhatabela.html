@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        tabela horario
+        <style type="text/css" media="all">
+        body {
+            background-color: #f5f1f1;
+            color: aqua;
+        }
+        P {
+            color: blue;
+        }
+        #uau {
+            font-style:italic;
+            color:bisque
+        }
+        .red {
+            color: #f33;
+        }
+        .yellow-bg {
+            background-color: #ffa;
+        }
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px blue;
+        }
+        .warning {
+            background-color: red;
+        }
+        p.warning {
+            color: white
+        }
+        .special {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .warning.special {
+            color: blue;
+        }
+        a[href^="#"] {
+            background-color: gold;
+        }
+        a[href*="example"] {
+            background-color: silver;
+        }
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+        a[href$=".org"] {
+            color: red;
+        }
+        a[href^="https"] [href$=".org"] {
+            color: green;
+        }
+        * [lang^="en"] {
+            color: green;
+        }
+        *.warning {
+            color: red;
+        }
+        *#maincontent {
+            border: 1px solid blue;
+        }
+        </style>
+    </head>
+    <body>
+        <p style="color:blueviolet; background-color: aliceblue;">
+        universidade federal do ceara</p>
+        <table border="solid">
+            <caption>horario feriado</caption>
+            <thead>
+                <tr>
+                    <th>quinta</th>
+                    <th>sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8 as 9 hr</td>
+                    <td>9 as 10 hr</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>ATENÇÃO</p>
+        <p id="uau">nao perca o horario</p>
+        <p class="red">kauany</p>
+        <p class="red yellow-bg">linda</p>
+        <p class="red fancy">hihi</p>
+        <p class="warning"> texto1</p>
+        <h1 class="warning"> texto2</h1>
+        <p class="warning special"> texto3</p>
+        <ul>
+            <li><a href="#internal">Interno</a></li>
+            <li><a href="http://example.com">Exemplo</a></li>
+            <li><a href="#Insensitive">Insensitive internal</a></li>
+            <li><a href="http://example.org">Exemplo org</a></li>
+            <li><a href="https://example.org">Exemplo https org</a></li>
+        </ul>
+        <p class="warning">
+            <span lang="en-us">um span verde</span>
+            no paragrafo vermelho
+        </p>
+        <p id="maincontent" lang="en-gb">
+            <span class="warning">a red span</span>
+            in a green paragraph.
+        </p>
+    </body>
+</html>
